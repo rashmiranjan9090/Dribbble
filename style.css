@@ -1,10 +1,446 @@
+@font-face {
+    font-family: Dribble;
+    src: url(./WFVisualSans-SemiBold-aa0e55353b6a1b897f76a0fcbf5561fa243ce1b8b9f6aebcb5a186f0536713b1.ttf);
+}
+@font-face {
+    font-family: thin;
+    src: url(./regular.ttf);
+}
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: Dribble;
 }
 html,body{
     height: 100%;
     width: 100%;
+
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+#nav{
+    height: 100px;
+    width: 100%;
+    /* background-color: red; */
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+#nav #left{
+    height: 100%;
+    width: 35%;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    /* background-color: aqua; */
+}
+#nav #left a{
+    font-size: 15px;
+    font-weight: 900;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.777);
+    text-transform: capitalize;
+}
+
+#imgdiv{
+    height: 100%;
+    width: 22%;
+    margin-right: 35px;
+          display: flex;
+     align-items: center;
+     justify-content: center;
+        /* background-color: blue; */
+        
+
+}
+#imgdiv img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+   
+
+}
+#nav #right{
+    height: 100%;
+    width: 20%;
+    /* background-color: rgba(169, 17, 233, 0.748); */
+      display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+#nav #right button{
+    background-color: #3D3D4E;
+    padding: 10px 18px;
+    border-radius: 999px;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: capitalize;
+}
+#right i{
+    font-size:27px;
+    font-weight: 400;
+}
+#right div{
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  border-radius: 100%;
+  overflow:hidden
+}
+#right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* border-radius: 100%; */
+
+}
+#topdesigners{
+    height: 560px;
+    width: 100%;
+    padding:25px 65px ;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#rightdesigners{
+    height: 100%;
+    width: 45%;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    /* z-index: 9; */
+}
+#rightdesigners video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#floatdiv{
+    height: 40px;
+    width: 170px;
+    background-color: #2bcaf7;
+    position: absolute;
+    /* z-index: 99; */
+    border: 0.2px solid rgb(221, 224, 226);
+    padding: 6px 12px;
+    border-radius: 100px;
+    right: 5%;
+    bottom: 5%;
+    display: flex;
+    color: rgb(16, 16, 16);
+    justify-content: space-between;
+    align-items: center;
+    /* background-size: cover; */
+
+
+}
+#floatdiv div{
+    height: 100%;
+    width: 25%;
+    object-fit: cover;
+    border-radius: 999px;
+    overflow: hidden;
+    transition: all ease 0.2s;
     
+}
+#floatdiv h1{
+    font-size: 13px;
+    font-family: thin;
+    font-weight: 600;
+
+}
+#floatdiv img{
+
+    height: 100%;
+    width: 100%;
+
+
+}
+#floatdiv:hover{
+     background-color: #e4e3e3;
+     
+}
+
+#leftdesigners{
+    height: 100%;
+    width: 50%;
+    /* background: #dc0909c5; */
+    padding: 30px 0px;
+}
+#leftdesigners>h1{
+    font-size: 54px;
+    font-weight: 600;
+    font-family: thin;
+    line-height: 53px;
+    
+    text-transform: capitalize;
+}
+#leftdesigners>p{
+    font-size: 18px;
+    margin-top: 16px;
+    font-weight: 500;
+    font-family: thin;
+    /* text-transform: capitalize; */
+
+}
+#leftdesigners #buttondiv{
+    width: 100%;
+    margin-top: 45px;
+}
+#leftdesigners #buttondiv button{
+    padding: 7px 10px;
+    font-size: medium;
+    /* border: none; */
+    font-family: thin;
+    font-weight: 600;
+    
+    background-color: #ffffffd1;
+    text-transform: capitalize;
+    border-radius: 999px;
+    border: 0.3px soild black;
+    transition: all ease 0.2s;
+}
+#leftdesigners #buttondiv button:hover{
+    background-color: #3D3D4E;
+    color: white;
+    cursor: pointer;
+}
+
+#leftdesigners #searchdiv{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid black;
+    margin-top: 18px;
+    border-radius: 999px;
+    background-color: #e6e2e2;
+    transition: all ease 0.1s;
+}
+#leftdesigners #searchdiv:hover{
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+#leftdesigners #searchdiv>h1{
+    font-size: 15px;
+    letter-spacing: normal;
+    font-family: thin;
+    font-weight: 300;
+    width: 90%;
+}
+#searchdiv>div{
+    height: 40px;
+    width: 40px;
+    background-color: #EC5E95;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100%;
+
+  
+}
+#searchdiv>div>i{
+  font-size: x-large;
+  /* background-color: aliceblue; */
+  color: #FFFFFF;
+
+}
+#populardiv{
+    width: 80%;
+    padding: 10px;
+    margin-top: 18px;
+    /* background-color: rgb(127, 186, 9); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#populardiv>h1{
+    font-size: 15px;
+    font-family: thin;
+    font-weight: 700;
+    
+}
+#populardiv>button{
+       padding: 6px 12px;
+    font-size: medium;
+    /* border-color: #ffffffc6; */
+    border: 0.1px solid rgba(0, 0, 0, 0.111);
+    font-size: small;
+    background-color: #FFFFFF;
+    text-transform: capitalize;
+    border-radius: 999px;
+    font-family: thin;
+    font-weight: 200;
+    transition: all ease 0.2s;
+}
+#populardiv>button:hover{
+    background-color: #f6f6f9;
+    cursor: pointer;
+}
+#getmatcheddiv{
+    width: 90%;
+    padding: 20px 10px;
+    margin-left: 65px;
+    margin-top: 20px;
+    background-color: rgb(247, 249, 250);
+    display: flex ;
+    border-radius: 50px;
+    gap: 10px;
+    align-items: center;
+
+}
+#getmatcheddiv p{
+    font-size: 15px;
+    font-family: thin;
+    font-weight: 500;
+
+
+}
+#getmatcheddiv button{
+    padding: 10px 15px ;
+    background-color: #e1e1e4;
+    font-size: medium;
+    font-weight: 400;
+    border-radius: 999px;
+    border: 0.2px solid beige;
+}
+#page-2{
+     width: 100%;
+     padding: 0px 65px;
+     /* background-color: red; */
+     height: 600px;
+     margin-top: 10px;
+}
+#page-2 #filtersdiv{
+    display: flex;
+    width: 100%;
+    /* background-color: blue; */
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+#filtersdiv>h1{
+    border: 0.4px solid rgb(179, 176, 176);
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: 18px;
+    font-family: thin;
+    font-weight: 600;
+
+}
+#filtersdiv button{
+    padding: 5px 15px;
+    border-radius: 999px;
+    font-size: 16px;
+    font-family: thin;
+    background-color: #ffffff;
+    font-weight: 400;
+    margin-right: 10px;
+    border: 0.1px solid rgb(187, 182, 182);
+    text-transform: capitalize;
+    transition: all ease 0.2s;
+}
+#filtersdiv button:hover{
+    color: #757576;
+    cursor: pointer;
+}
+#projects{
+    /* height: 100px; */
+    width: 100%;
+    /* background-color: #EC5E95; */
+    display: flex;
+    gap: 2.5%;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    padding-bottom: 20px;
+}
+#project{
+    width: 22.5%;
+    /* background-color: #2bcaf7; */
+    margin-top: 25px;
+    position: relative;
+    
+    overflow: hidden;
+}
+#project #imgdiv{
+    height: 200px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: yellowgreen;
+}
+
+#project #imgdiv img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+#project #infodiv{
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+}
+#project #infodiv #right{
+    display: flex;
+    gap: 10px;
+    text-align: center;
+
+}
+#project #infodiv #right h3{
+    font-size: 15px;
+    font-weight: 600;
+
+}
+#project #infodiv h1{
+    font-size: 18px;
+    
+
+
+}
+#project #hidden{
+    height: 100px;
+    width: 100%;
+    padding: 0px 10px;
+    background: linear-gradient(transparent,black);
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    position: absolute;
+    bottom: -60%;
+    transition: all ease 0.5s;
+}
+#project #hidden h1{
+    font-size: 19px ;
+    font-weight: 500;
+    color: #fefdfd;
+}
+#project #hidden div{
+    display: flex;
+    gap: 8px;
+}
+#project #hidden i{
+  padding: 5px;
+  border-radius: 100%;
+  background-color: #e1e1e4;
+  color: #3D3D4E;
+  font-size: larger;
+
+}
+#project:hover #hidden{
+  bottom: 0;
 }
